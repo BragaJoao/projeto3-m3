@@ -1,0 +1,27 @@
+{
+  "name": "projeto3-m3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BragaJoao/projeto3-m3.git"
+  },
+  "author": "João Guilherme Braga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BragaJoao/projeto3-m3/issues"
+  },
+  "homepage": "https://github.com/BragaJoao/projeto3-m3#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}

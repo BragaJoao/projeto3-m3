@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #2d64e6;
+}
+
+section.inicio {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    color: white;
+  }
+  
+  section.inicio header {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    gap: 1rem;
+  }
+  
+  section.inicio header img {
+    max-width: 4.688rem;
+    max-height: 3.125rem;
+    width: auto;
+    height: auto;
+  }
+  
+  section.inicio header h1 {
+    color: white;
+  }
+  
+  section.inicio nav {
+    padding: 3rem;
+    font-size: 26px;
+    margin-left: auto;
+  }
+  
+  section.inicio nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    align-content: flex-end;
+    color: white;
+    gap: 1rem;
+    font-size: 24px;
+    
+  }
+  
+  section.inicio nav ul li {
+    list-style: none;
+    text-decoration: none;
+    gap: 2rem;
+    
+  }
+  
+  section.inicio nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+
+  section.inicio nav ul li a:hover{
+    font-size: 1.4rem;
+  }
+
+section#cards {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+div.card img {
+    max-width: 17.8rem;
+    width: auto;
+    height: auto;
+}
+
+section#cadastro {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+section#cadastro h2{
+  margin: auto;
+}
+
+section#cadastro div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#cadastro div img {
+  max-width: 31.25rem;
+  width: auto;
+  height: auto;
+  margin: auto;
+}
+
+section#cadastro form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+}
+
+section#cadastro input {
+  border-radius: .25rem;
+}
+
+
+
+section#cadastro form button {
+  padding: 0.7rem;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  font-size: 0.9rem;
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+section#cadastro form button:hover {
+  background-color: greenyellow;
+}
+
+
+section#cards {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+section#cards div.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 2.5px 2.5px 2.5px #00000080;
+    border-radius: .5rem;
+}
+
+section#cards div.card img {
+    border-radius: .5rem .5rem 0 0;
+    width: 100%;
+    background-color: whitesmoke;
+  }
+
+  section#cards div.card a.inf {
+    padding: 0.7rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    background-color: blue;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-top: .75rem;
+  }
+
+section#cards div.card a.editar {
+    padding: 0.7rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    background-color: blue;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-top: .75rem;
+  }
+
+  section#cards div.card a.apagar {
+    padding: 0.7rem;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    background-color: blue;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+  }
+
+  section#cards div.card a#editar:hover {
+    background-color: blueviolet;
+  }
+
+  section#cards div.card a#apagar:hover {
+    background-color: blueviolet;
+  }
+
+  section#cards div.card a#inf:hover {
+    background-color: blueviolet;
+  }
+
+  footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: black;
+    color: white;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+  }
+  
+  footer p {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: .3rem;
+    color: white;
+  }
+  
+  footer p a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #2d64e6;
+  } 
+
+  section.details {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: .5rem;
+    background-color: white;
+    box-shadow: 2.5px 2.5px 2.5px #00000080;
+    width: 80%;
+    margin: auto;
+    margin-top: 5rem;
+  }
+
+  section.details img {
+    max-width: 30rem;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+
+  section.details div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+  }
+
+  section.details div h1 {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 5rem;
+    font-size: 2.25rem;
+  }
+
+  section.details div article{
+    margin-left: auto;
+    width: 100%;
+    margin: 2rem 0 0 1rem;
+    font-size: 1.25rem;
+  }
+
+  section#message {
+    padding: 1.5rem;
+    background-color: blue;
+    color: white;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  span#close {
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  span#close:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.5);
+  }
+
+  @media (max-width: 600px) {
+
+    section.inicio {
+      flex-direction: column;
+    }
+
+    section.inicio header {
+      margin: auto;
+    }
+
+    section.inicio nav {
+      margin: auto;
+    }
+
+    section#cadastro div img {
+      max-width: 15.625rem;
+      width: auto;
+      height: auto;
+      margin: auto;
+    }
+
+    section#cadastro form button {
+      width: 55%;
+   }
+   section.details {
+     width: 100%;
+   }
+
+   section.details img {
+    max-width: 16rem;
+    width: auto;
+    height: auto;
+    margin: auto;
+  }
+
+  section.details div article{
+    margin-left: auto;
+    width: 100%;
+    margin-top: 2rem auto;
+    font-size: 1.25rem;
+  }
+
+  
+   }

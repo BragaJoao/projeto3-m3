@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <section class="inicio">
+        <header>
+            <img src="/img/controle.png" alt="controle">
+            <h1>Catalogo de Jogos</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Inicio</a>
+                    <a href="/cadastro">Cadastro</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <main>
+
+        <% if(message !="" ) { %>
+            <section id="message">
+                <p>
+                    <%= message %>
+                </p> <span id="close">&times;</span>
+            </section>
+        <% } %>
+
+                <section id="cadastro">
+
+                    <% if(games==undefined) { %>
+
+                        <h2>
+                            Cadastre um novo jogo!
+                        </h2>
+
+                        <div>
+
+                            <img src="/img/start.png" alt="start">
+
+                            <form action="/create" method="POST">
+
+                                <label for="nome">Nome: </label>
+                                <input type="text" id="nome" name="nome">
+
+                                <label for="descricao">Descrição:</label>
+                                <input type="text" id="descricao" name="descricao">
+
+                                <label for="imagem">Link da Imagem:</label>
+                                <input type="text" id="imagem" name="imagem">
+
+                                <button id="btnCadastrar" type="submit">CADASTRAR</button>
+
+
+                            </form>
+                        </div>
+                        <% } else {%>
+
+                            <h2>Atualize os dados do jogo!</h2>
+
+                            <div>
+                                <img src="/img/start.png" alt="start">
+                                <form action="/update/<%= games.id %>" method="POST">
+
+                                    <label for="nome">Nome: </label>
+                                    <input type="text" id="nome" name="nome" value="<%= games.nome %>">
+
+                                    <label for="descricao">Descrição:</label>
+                                    <input type="text" id="descricao" name="descricao" value="<%= games.descricao %>">
+
+                                    <label for="imagem">Link da Imagem:</label>
+                                    <input type="text" id="imagem" name="imagem" value="<%= games.imagem %>">
+
+                                    <button id="btnAtualizar" type="submit">ATUALIZAR</button>
+
+                                </form>
+
+                            </div>
+
+                            <% } %>
+                </section>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
