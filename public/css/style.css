@@ -73,11 +73,16 @@ section.inicio {
     font-size: 1.4rem;
   }
 
+  main {
+    height: 100%;
+  }
+
 section#cards {
+  display: flex;
     width: 100%;
     height: 100%;
-    display: flex;
     flex-wrap: wrap;
+    margin-bottom: 5rem;
     gap: 1rem;
 }
 
@@ -90,16 +95,17 @@ div.card img {
 section#cadastro {
   display: flex;
   flex-direction: column;
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 
 section#cadastro h2{
   margin: auto;
+  font-size: 36px;
 }
 
 section#cadastro div {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 section#cadastro div img {
@@ -214,26 +220,29 @@ section#cards div.card a.editar {
     margin-bottom: .75rem;
   }
 
-  section#cards div.card a#editar:hover {
-    background-color: blueviolet;
+  section#cards div.card a.editar:hover {
+    background-color: #77fd77;
+    color: black;
   }
 
-  section#cards div.card a#apagar:hover {
-    background-color: blueviolet;
+  section#cards div.card a.apagar:hover {
+    background-color: #77fd77;
+    color: black;
   }
 
-  section#cards div.card a#inf:hover {
-    background-color: blueviolet;
+  section#cards div.card a.inf:hover {
+    background-color: #77fd77;
+    color: black;
   }
 
   footer {
+    display: flex;
     width: 100%;
     height: 100%;
-    display: flex;
     background-color: black;
     color: white;
     flex-wrap: wrap;
-    margin-top: 5rem;
+    margin-top: 4.6rem;
   }
   
   footer p {
@@ -330,6 +339,11 @@ section#cards div.card a.editar {
 
     section.inicio nav {
       margin: auto;
+    }
+
+    section#cadastro h2{
+      margin: auto;
+      font-size: 26px;
     }
 
     section#cadastro div img {
