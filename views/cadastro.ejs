@@ -49,13 +49,13 @@
                             <form action="/create" method="POST">
 
                                 <label for="nome">Nome: </label>
-                                <input type="text" id="nome" name="nome">
+                                <input type="text" id="nome" name="nome" required>
 
                                 <label for="descricao">Descrição:</label>
-                                <input type="text" id="descricao" name="descricao">
+                                <input type="text" id="descricao" name="descricao" required>
 
                                 <label for="imagem">Link da Imagem:</label>
-                                <input type="text" id="imagem" name="imagem">
+                                <input type="text" id="imagem" name="imagem" required>
 
                                 <button id="btnCadastrar" type="submit">CADASTRAR</button>
 
@@ -68,16 +68,16 @@
 
                             <div>
                                 <img src="/img/start.png" alt="start">
-                                <form action="/update/<%= games.id %>" method="POST">
+                                <form action="/update/<%= games.id %>" method="POST" >
 
                                     <label for="nome">Nome: </label>
-                                    <input type="text" id="nome" name="nome" value="<%= games.nome %>">
+                                    <input type="text" id="nome" name="nome" value="<%= games.nome %>" required>
 
                                     <label for="descricao">Descrição:</label>
-                                    <input type="text" id="descricao" name="descricao" value="<%= games.descricao %>">
+                                    <input type="text" id="descricao" name="descricao" value="<%= games.descricao %>" required>
 
                                     <label for="imagem">Link da Imagem:</label>
-                                    <input type="text" id="imagem" name="imagem" value="<%= games.imagem %>">
+                                    <input type="text" id="imagem" name="imagem" value="<%= games.imagem %>" required>
 
                                     <button id="btnAtualizar" type="submit">ATUALIZAR</button>
 
@@ -92,7 +92,7 @@
     <footer>
         <p> Pokedex deselvolvida por João Guilherme Braga, <a href="https://www.linkedin.com/in/jo%C3%A3o-guilherme-braga-4977a81b5/">Linkedin</a> <a href="https://github.com/BragaJoao">GitHub</a> </p>
     </footer>
-    
+
     <script src="/js/script.js"></script>
 </body>
 
